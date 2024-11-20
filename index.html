@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Player - Explore Your Playlist</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand">
+                <img src="logo.png" alt="My Music Player">
+                My Music Player
+            </li>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="songList">
+            <h1>Top Hits - Explore and Play</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="song1.jpg" alt="Sunrise">
+                    <span class="songName">Sunrise Beats</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">04:22 <i id="0" class="far songItemPlay fa-play-circle"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="song2.jpg" alt="Ocean Vibes">
+                    <span class="songName">Ocean Vibes</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">03:45 <i id="1" class="far songItemPlay fa-play-circle"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="song3.jpg" alt="Calm Nights">
+                    <span class="songName">Calm Nights</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">05:10 <i id="2" class="far songItemPlay fa-play-circle"></i></span>
+                    </span>
+                </div>
+                <div class="songItem">
+                    <img src="song4.jpg" alt="Fire in the Sky">
+                    <span class="songName">Fire in the Sky</span>
+                    <span class="songlistplay">
+                        <span class="timestamp">04:55 <i id="3" class="far songItemPlay fa-play-circle"></i></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+        <input type="range" id="myProgressBar" min="0" max="100" value="0">
+        <div class="icons">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-3x fa-step-forward" id="next"></i>
+        </div>
+        <div class="songInfo">
+            <img src="playing.gif" alt="Playing Animation" width="42px" id="gif">
+            <span id="masterSongName">Sunrise Beats - Now Playing</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
